@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  /* background-image: url("assets/backgrounds/Blue.png"); */
+  background-color: #222;
+  transition: 0.7s ease-in-out;
+}
+
+canvas {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 200px;
+  border: 1px solid rgb(255, 255, 255);
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 1);
+  -moz-box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 1);
+  background-color: #222;
+  /* 0px 0px 10px 10px rgba(13, 136, 63, 1); */
+}
+
+#gameTitle {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+#gameOver {
+  position: relative;
+  top: -450px;
+  color: red;
+  text-align: center;
+  font-size: 48px;
+  display: none;
+  z-index: 1;
+}
+
+/* transform: translate(-50%, -50%); */
+#victory {
+  position: relative;
+  top: -450px;
+  color: green;
+  text-align: center;
+  font-size: 48px;
+  display: none;
+  z-index: 1;
+}
+
+#restartButton {
+
+  background-color: rgba(5, 197, 21, 0.562);
+  font-size: 24px;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: none;
+  z-index: 1;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 200px;
+}
+
+#menu {
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  /* border: 1px solid purple; */
+}
+
+#startButton {
+  font-size: 24px;
+  padding: 10px 20px;
+  background-color: rgba(5, 197, 21, 0.562);
+  cursor: pointer;
+}
+
+#settings {
+  font-size: 24px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#ustawienia {
+  display: none;
+}
+
+#score {
+  text-align: center;
+  position: relative;
+  top: -350px;
+  font-size: 24px;
+  display: none;
+}
+
+#exitButton {
+  position: relative;
+  top: 450px;
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+}
+
+.box {
+  margin: 0 auto;
+  height: 800px;
+  width: 400px;
+  backdrop-filter: blur(10px);
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-size: 46px 46px;
+  background-image: repeating-linear-gradient(0deg, #000000, #000000 2.3000000000000003px, #e5e5f7 2.3000000000000003px, #e5e5f7);
+  border: #000 2px solid;
+}
+
+.title {
+  margin-top: 8px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.subtitle {
+  margin-top: 58px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.przycisk {
+  color: white;
+  border: 0px none rgba(100, 100, 100, 1);
+  height: 65px;
+  margin-bottom: 20px;
+  width: 350px;
+  border-radius: 75px;
+  background-color: rgba(255, 255, 255, 0.19);
+  text-shadow: 0px 0px 26px rgba(255, 255, 255, 0.91);
+  transition:
+    transform 153ms ease,
+    border 202ms ease,
+    border-radius 202ms ease;
+}
+
+.przycisk:hover {
+  transform: translate(0px, 0px) scale(1.1, 1.1);
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 50px;
+}
+
+.text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: white;
+}
+
+.element {
+  pointer-events: none;
+}
+
+.static {
+  text-align: center;
+  pointer-events: none;
+}
+
+.visual {
+  display: flex;
+  justify-content: center;
+}
+
+.custom-select {
+  width: 300px;
+  position: relative;
+  margin: 0 auto;
+}
+
+select {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  font-size: 16;
+  padding: 10.8px 16px 10.8px 16px;
+  background-color: #fff;
+  border: 1px solid #caced1;
+  border-radius: 4px;
+  color: #000;
+  cursor: pointer;
+  outline: none;
+}

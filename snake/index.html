@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>SNAKE GRA</title>
+</head>
+
+<body>
+
+  <div class="element">
+    <h1 id="gameTitle" class="text">GRA W SNAKE</h1>
+  </div>
+
+  <div id="container">
+    <div id="menu">
+      <button id="startButton" class="przycisk" class="text">ROZPOCZNIJ GRĘ</button>
+      <button id="settingsButton" class="przycisk" class="text">USTAWIENIA</button>
+    </div>
+  </div>
+
+  <div>
+    <canvas id="gameCanvas" width="400" height="400" style="display: none;"></canvas>
+    <div class="visual">
+      <button id="restartButton" class="przycisk" class="text">ZAGRAJ PONOWNIE</button>
+    </div>
+  </div>
+
+  <div id="ustawienia">
+    <div class="box">
+      <p class="title">USTAWIENIA</p>
+
+      <div class="subtitle" class="difficulty">
+        <p>TŁO</p>
+        <div class="custom-select">
+          <select id="pickerbackground">
+            <option value="1">Podstawowe</option>
+            <option value="2">Niebieskie</option>
+            <option value="3">Brązowe</option>
+            <option value="4">Szare</option>
+            <option value="5">Zielone</option>
+            <option value="6">Różowe</option>
+            <option value="7">Fioletowe</option>
+            <option value="8">Zółte</option>
+          </select>
+          <p>TŁO PLANSZY</p>
+          <select id="picker">
+            <option value="1">Podstawowe</option>
+            <option value="2">Niebieskie</option>
+            <option value="3">Brązowe</option>
+            <option value="4">Szare</option>
+            <option value="5">Zielone</option>
+            <option value="6">Różowe</option>
+            <option value="7">Fioletowe</option>
+            <option value="8">Zółte</option>
+          </select>
+        </div>
+        <div>
+          <button id="exitButton" class="przycisk" class="text">ZAPISZ I WYJDŹ</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="element">
+    <div id="score" class="text">Punkty: 0</div>
+  </div>
+  <div class="element">
+    <div id="gameOver" class="text">PRZEGRAŁEŚ!</div>
+    <div id="victory" class="text">WYGRAŁEŚ!</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
